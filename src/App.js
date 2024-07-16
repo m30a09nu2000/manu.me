@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
@@ -11,7 +11,7 @@ function App() {
   const { mode } = useStore();
   return (
     <div className={`app ${mode ? "light-mode" : "dark-mode"}`}>
-      <Router>
+      <HashRouter>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
-      </Router>
+      </HashRouter>
     </div>
   );
 }
