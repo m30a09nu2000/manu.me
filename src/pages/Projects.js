@@ -30,7 +30,6 @@ const Projects = () => {
       name: "Weather App",
       description: "Weather description",
       image:weather,
-      link:process.env.REACT_APP_WEATHER_URL
     },
   ];
   return (
