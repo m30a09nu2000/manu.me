@@ -97,7 +97,7 @@ const Projects = () => {
                 },
               }}
             >
-              <a href={project.link} style={{ textDecoration: "none" }}>
+              <a href={project.link} style={{ textDecoration: "none" }}  target="_blank">
                 <CardMedia
                   component="img"
                   height="100"

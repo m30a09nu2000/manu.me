@@ -60,7 +60,7 @@ const NavBar = () => {
               }}
               variant="body"
             >
-              MPS
+              MSP
             </Typography>
           </Link>
         </Stack>
